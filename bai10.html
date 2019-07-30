@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //  Bài 10: Viết chương trình tính giá điện.
+        //Tính tiền điện phải trả theo quy tắc 100kW đầu 450đ/kW, từ kW 101-150 750đ/kW, trên 150kW 950đ/kW.
+
+        let kwDaDung;
+        
+        let giaDienDaDung = kwDaDung * 450;
+        let giaDien100kwDau = kwDaDung * 450;
+        let giaDienTu101kw = giaDien100kwDau + (kwDaDung - 100) * 750;
+        let giaDienTren150 = giaDien100kwDau + giaDienTu101kw + (kwDaDung - 150) * 150;
+        let tongGiaDien;
+        kwDaDung = parseInt(prompt('Moi ban nhap so KW da dung:'));
+        if (kwDaDung <= 100) {
+            tongGiaDien = giaDien100kwDau;
+
+        }
+        else if (kwDaDung > 100 && kwDaDung <= 150) {
+            tongGiaDien = giaDienDaDung;
+        }
+        else {
+            tongGiaDien = giaDienTren150;
+        }
+        alert('Gia dien cua ban la:' + tongGiaDien);
+    </script>
+</body>
+</html>

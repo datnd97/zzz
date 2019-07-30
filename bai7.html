@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+        // / Bài 7: Giải phương trình bậc 2.
+        alert('Bài 7: Giải phương trình bậc 2.');
+        /*
+        input : 
+        a va b;    
+        ax*x + b = 0;
+        output :x 
+        */
+        let A = parseInt(prompt('Moi ban nhap so bac 2:'));
+        let B = parseInt(prompt('Moi ban nhap so bac 1:'));
+        let C = parseInt(prompt('Moi ban nhap he so tu do:'));
+        let rs;
+        if (A == 0) {
+            if (B == 0) {
+                rs = "Phuong trinh vo nghiem";
+            }
+            else {
+                rs = -C / B;
+            }
+        }
+        else {
+            let delta = B * B - 4 * A * C;
+            let x1 = (-B + Math.sqrt(delta)) / (2 * A);
+            let x2 = (-B + Math.sqrt(delta)) / (2 * A);
+
+            if (delta != 0) {
+                if (delta < 0) {
+                    rs = "Vo nghiem";
+                }
+                else {
+                    rs = "Phuong trinh co 2 nghiem : " + "x1:" + x1 + " " + "x2:" + x2;
+                }
+            }
+            else {
+                rs = "x1 = x2 = " + (-B / 2 * A);
+            }
+        }
+        alert("Ket qua la:" + rs);
+
+    </script>
+</body>
+</html>

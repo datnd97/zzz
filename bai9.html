@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một tam giác là:
+    alert('Bài 9: Kiểm tra xem 3 số thực(a, b, c) nhập vào có phải là cạnh của một tam giác.Điều kiện để a, b, c là cạnh của một tam giác là:');
+
+let canh1;
+let canh2;
+let canh3;
+
+let checkTamGiac = true;
+if(canh1 > 0 && canh2 >0 && canh3 >0)
+{
+    if((canh1 + canh2) >canh3 && (canh2+canh3)>canh1 && (canh1+canh3)>canh2)
+    {   
+        check;
+    }
+}
+else
+{
+    check = false;
+}
+
+if(check)
+{
+    alert('Day la tam gian');
+}
+else
+{
+    alert('Day khong la tam giac');
+}
+    </script>
+</body>
+</html>

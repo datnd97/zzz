@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Bài 6: Giải phương trình bậc 1.
+    alert("Day la phuong trinh bac 1:");
+        let numOfA = parseInt(prompt('Moi ban nhap so a:'));
+        let numOfB = parseInt(prompt('Moi ban nhap so b:'));
+        let numOfBac1;
+        if (numOfA != 0) {
+            numOfBac1 = -numOfB / numOfA;
+        }
+        else {
+           if(numOfB ==0)
+           {
+               numOfBac1 = "PT vo so nghiem";
+           }
+           else
+           {
+               numOfBac1="PT khong co nghiem";
+           }
+        }
+        alert(numOfBac1);
+    
+    </script>
+</body>
+</html>

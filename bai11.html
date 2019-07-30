@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+
+        Bài 11: Viết chương trình tính thuế thu nhập cá nhân.
+
+        30% thuế thu nhập nếu lương là 15 triệu
+
+        20% thuế thu nhập nếu lương từ 7 đến 15 triệu
+
+        10% thuế thu nhập nếu lương dưới 7 triệu
+        */
+        let thue;
+        let thuNhap;
+        thuNhap = parseInt(prompt('Moi ban nhap luong:'));
+        let _30phanTram = thuNhap*30 /100 ;
+        let _20phanTram = thuNhap*20/100;
+        let _10phanTram = thuNhap*10/100;
+
+        let lonHon15trieu = thuNhap >=15;
+        let duoi15trieu = thuNhap < 15 && thuNhap >= 7;
+        let duoi7tieu = thuNhap < 7;
+
+        
+        if(lonHon15trieu)
+        {
+            thue = _30phanTram;
+        }
+        else if(duoi15trieu)
+        {
+            thue = _20phanTram;
+        }
+        else
+        {
+            thiue = _10phanTram;
+        }
+
+        alert("Thue thu nhap ca nhan la:"+thue);
+    </script>
+</body>
+
+</html>
